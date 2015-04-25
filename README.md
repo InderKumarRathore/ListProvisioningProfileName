@@ -36,6 +36,3 @@ f01125b0-6623-47ed-b766-cbb1138ab752.mobileprovision	my-dev-wild
 
 ### License
 MIT
-
-
-**Free Software, Hell Yeah!**
