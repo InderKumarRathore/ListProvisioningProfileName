@@ -13,7 +13,7 @@ chmod +x list-provisioning-profile-name.sh
 ### Usage
 1. Change the directory where provisioning profiles resides
 ```sh
-cd /Users/username/Library/MobileDevice/Provisioning\ Profiles/
+cd ~/Library/MobileDevice/Provisioning\ Profiles/
 ```
 2. Run the script
 ```sh
