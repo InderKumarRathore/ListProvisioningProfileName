@@ -2,25 +2,25 @@
 
 ***ListProvisioningProfileName*** is a simple shell script to list all the names of the provisioning profile of apple development in a folder
 
-### Installation
-1. Download the `list-provisioning-profile-name.sh` and copy it to your home directory.
-2. Change the permission of `list-provisioning-profile-name.sh` as below
+## Usage
+- Download or copy the repo and place the script file under given `PATH-TO-FILE`.
+- Change the permission of `list-provisioning-profile-name.sh` as below
+
 ```sh
-cd ~
-chmod +x list-provisioning-profile-name.sh
+chmod +x ~/PATH-TO-FILE/list-provisioning-profile-name.sh
+```
+- Go to the directory where provisioning profiles resides
+
+```sh
+cd ~/Library/MobileDevice/Provisioning\ Profiles/
+```
+- Run the script
+
+```sh
+sh ~/PATH-TO-FILE/list-provisioning-profile-name.sh
 ```
 
-### Usage
-1. Change the directory where provisioning profiles resides
-```sh
-cd /Users/username/Library/MobileDevice/Provisioning\ Profiles/
-```
-2. Run the script
-```sh
-list-provisioning-profile-name.sh
-```
-
-### Output
+## Example Output
 ```sh
 03174601-551e-4185-b6b9-968b7ebd57a1.mobileprovision	ad hoc myprofile
 31456708-99d8-4496-88ce-8c2acee1d5c6.mobileprovision	xc ad hoc: com.abc.ios.*
@@ -34,8 +34,11 @@ af21b527-05d7-476a-888f-2d3a3d429277.mobileprovision	xc ad hoc: com.abc.ios.name
 f01125b0-6623-47ed-b766-cbb1138ab752.mobileprovision	my-dev-wild
 ```
 
+### Source: 
+https://github.com/InderKumarRathore/ListProvisioningProfileName
+
+### Credits
+InderKumarRathore
+
 ### License
 MIT
-
-
-**Free Software, Hell Yeah!**
