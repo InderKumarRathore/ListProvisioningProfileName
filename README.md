@@ -3,21 +3,33 @@
 ***ListProvisioningProfileName*** is a simple shell script to list all the names of the provisioning profile of apple development in a folder
 
 ## Usage
-- Download or copy the repo and place the script file under given `PATH-TO-FILE`.
+- Create `bin` folder in you home dir
+```sh
+mkdir ~/bin
+```
+
+- Download or copy the repo and place the script file under given `bin` or use below command to download
+```sh
+ cd ~/bin
+ curl -O https://raw.githubusercontent.com/InderKumarRathore/ListProvisioningProfileName/master/list-provisioning-profile-name.sh
+```
 - Change the permission of `list-provisioning-profile-name.sh` as below
 
 ```sh
-chmod +x ~/PATH-TO-FILE/list-provisioning-profile-name.sh
+chmod +x list-provisioning-profile-name.sh
 ```
-- Go to the directory where provisioning profiles resides
+
+- Add the script path to the `PATH` variable, edit your `~/.bash_profile` and add this line
 
 ```sh
-cd ~/Library/MobileDevice/Provisioning\ Profiles/
+export PATH=$PATH:~/bin
 ```
+- Restart the termainal or source the `.bash_profile`
+
 - Run the script
 
 ```sh
-sh ~/PATH-TO-FILE/list-provisioning-profile-name.sh
+list-provisioning-profile-name.sh
 ```
 
 ## Example Output
@@ -33,6 +45,8 @@ sh ~/PATH-TO-FILE/list-provisioning-profile-name.sh
 af21b527-05d7-476a-888f-2d3a3d429277.mobileprovision	xc ad hoc: com.abc.ios.name
 f01125b0-6623-47ed-b766-cbb1138ab752.mobileprovision	my-dev-wild
 ```
+
+- You can move to `cd ~/Library/MobileDevice/Provisioning\ Profiles/` to delete the individual provisioning profile
 
 ### Source: 
 https://github.com/InderKumarRathore/ListProvisioningProfileName
