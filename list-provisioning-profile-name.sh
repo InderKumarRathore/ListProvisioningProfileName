@@ -1,4 +1,6 @@
 #!/bin/bash
+cd ~/Library/MobileDevice/Provisioning\ Profiles/
+echo "Provisioning Profile Folder: cd ~/Library/MobileDevice/Provisioning\ Profiles/"
 read -d '' script << 'EOF'
 BEGIN {
     e = 1
