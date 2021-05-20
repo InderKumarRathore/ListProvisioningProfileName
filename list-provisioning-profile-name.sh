@@ -24,4 +24,4 @@ END {
 EOF
 
 
-awk -v "provisioningProfile=$1" "$script" *
+gawk -v "provisioningProfile=$1" "$script" *
