@@ -3,6 +3,11 @@
 ***ListProvisioningProfileName*** is a simple shell script to list all the names of the provisioning profile of apple development in a folder
 
 ## Usage
+- Download gawk
+```sh
+brew install gawk
+```
+
 - Create `bin` folder in you home dir
 ```sh
 mkdir ~/bin
