@@ -3,14 +3,14 @@
 ***ListProvisioningProfileName*** is a simple shell script to list all the names of the provisioning profile of apple development in a folder
 
 ## Usage
-- Create `bin` folder in you home dir
+- Create `scripts` folder in you home dir (if you want to place it somewhere else then please update the path accordingly)
 ```sh
-mkdir ~/bin
+mkdir ~/scripts
 ```
 
-- Download or copy the repo and place the script file under given `bin` or use below command to download
+- Download or copy the repo and place the script file under given `scripts` or use below command to download
 ```sh
- cd ~/bin
+ cd ~/scripts
  curl -O https://raw.githubusercontent.com/InderKumarRathore/ListProvisioningProfileName/master/list-provisioning-profile-name.sh
 ```
 - Change the permission of `list-provisioning-profile-name.sh` as below
@@ -22,7 +22,7 @@ chmod +x list-provisioning-profile-name.sh
 - Add the script path to the `PATH` variable, edit your `~/.bash_profile` and add this line
 
 ```sh
-export PATH=$PATH:~/bin
+export PATH=$PATH:~/scripts
 ```
 - Restart the termainal or source the `.bash_profile`
 
