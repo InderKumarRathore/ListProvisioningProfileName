@@ -19,7 +19,7 @@ mkdir ~/scripts
 chmod +x list-provisioning-profile-name.sh
 ```
 
-- Add the script path to the `PATH` variable, edit your `~/.bash_profile` and add this line
+- Add the script path to the `PATH` variable, edit your `~/.bash_profile` or `.zshrc` and add this line
 
 ```sh
 export PATH=$PATH:~/scripts
